@@ -1,2 +1,2 @@
-# C-Practice
+# CS Practice
 Kinda self-explanatory really.
