@@ -20,6 +20,7 @@ namespace C_Tests
          grades = new double[amount];
          avg = 0;
 
+            //Loops command for one student at a time, following grade, decimal possible.
          for(int i = 0; i < amount; i++){
 
            Console.WriteLine("Student name: ");
