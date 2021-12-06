@@ -12,7 +12,7 @@ namespace C_Tests
          double avg;
          int amount;
 
-         Console.WriteLine("Informe qtde alunos: ");
+         Console.WriteLine("Number of students: ");
 
          amount = int.Parse(Console.ReadLine());
 
@@ -22,9 +22,9 @@ namespace C_Tests
 
          for(int i = 0; i < amount; i++){
 
-           Console.WriteLine("Nome do aluno: ");
+           Console.WriteLine("Student name: ");
            names [i] = Console.ReadLine();
-           Console.WriteLine("Nota do aluno: ");
+           Console.WriteLine("Student grade: ");
            grades [i] = double.Parse(Console.ReadLine());
 
            avg = avg + grades[i];
@@ -33,17 +33,17 @@ namespace C_Tests
 
           avg = avg / amount;
 
-          Console.WriteLine("Média: {0:N}", avg);
+          Console.WriteLine("Average: {0:N}", avg);
 
           for (int i = 0; i < amount; i++){
 
             if(grades[i]>= avg)
 
-              Console.WriteLine("Aluno {0} acima da média. Nota {1}", names[i], grades[i]);
+              Console.WriteLine("Student {0} above average. Grade {1}", names[i], grades[i]);
 
           }
 
-          Console.WriteLine("Fim do programa");
+          Console.WriteLine("End");
    
         }
     }
