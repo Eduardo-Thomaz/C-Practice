@@ -7,44 +7,32 @@ namespace C_Tests
         static void Main(string[] args)
         {
 
-         string [] names;
-         double [] grades;
-         double avg;
-         int amount;
+          double [] n1;
+          double [] n2;
+          double [] nt;
+          int arraySize;
 
-         Console.WriteLine("Number of students: ");
+          Console.WriteLine("Inform array size:");
+          arraySize = int.Parse(Console.ReadLine());
 
-         amount = int.Parse(Console.ReadLine());
+          n1 = new double[arraySize];
+          n2 = new double[arraySize];
+          nt = new double[arraySize];
 
-         names = new string[amount];
-         grades = new double[amount];
-         avg = 0;
+          for (int n = 0; n < arraySize; n++)
+          {
 
-            //Loops command for one student at a time, following grade, decimal possible.
-         for(int i = 0; i < amount; i++){
+            Console.WriteLine("Inform n1:");
+            n1[n] = double.Parse(Console.ReadLine());
 
-           Console.WriteLine("Student name: ");
-           names [i] = Console.ReadLine();
-           Console.WriteLine("Student grade: ");
-           grades [i] = double.Parse(Console.ReadLine());
+            Console.WriteLine("Inform n2:");
+            n2[n] = double.Parse(Console.ReadLine());
 
-           avg = avg + grades[i];
-
-         }
-
-          avg = avg / amount;
-
-          Console.WriteLine("Average: {0:N}", avg);
-
-          for (int i = 0; i < amount; i++){
-
-            if(grades[i]>= avg)
-
-              Console.WriteLine("Student {0} above average. Grade {1}", names[i], grades[i]);
-
+            nt[n] = n1[n] + n2[n];
+            Console.WriteLine("nt is: {0:N}", nt[n]);
           }
 
-          Console.WriteLine("End");
+          Console.WriteLine("End of shenanigans!");
    
         }
     }
